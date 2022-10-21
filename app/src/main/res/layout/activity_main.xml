@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00E5FF"
+    tools:context=".MainActivity">
+
+    <!--создание простой формы просмотра изображений-->
+    <ImageView
+        android:id="@+id/idIVMic"
+        android:layout_width="166dp"
+        android:layout_height="172dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="#00F4E4E4"
+        android:src="@drawable/_7571"
+        app:tint="#FF0000" />
+
+
+    <!--создание текстового представления в строке ниже-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idIVMic"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/abril_fatface"
+        android:gravity="center"
+        android:text="Нажми и говори"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FF0000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <!--создание текстового представления для отображения
+        вывод на нижеприведенную строку-->
+
+    <TextView
+        android:id="@+id/idTVOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idIVMic"
+        android:layout_marginTop="95dp"
+        android:gravity="center"
+        android:text="Здесь отобразится текст"
+        android:textAlignment="center"
+        android:textColor="#555555"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="201dp"
+        android:layout_height="185dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="60dp"
+        app:srcCompat="@drawable/_36" />
+
+
+    <!--создание названия приложения-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="0dp"
+        android:textAlignment="center"
+        android:text="Приложение для глухих"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
